@@ -52,7 +52,7 @@ Start the server
 
 ## Tools
 
-- [react-anchor-link-smooth-scroll](https://react.i18next.com/)
+- [react-anchor-link-smooth-scroll](https://www.npmjs.com/package/react-anchor-link-smooth-scroll)
 - [react-icons](https://react-icons.github.io/react-icons/)
 
 ## Licence
