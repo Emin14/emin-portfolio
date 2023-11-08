@@ -1,0 +1,43 @@
+.footer {
+    font-weight: 700; 
+    color: var(--title-color);
+    box-shadow: var(--menu-shadow);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   margin-top: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.icons {
+    display: flex; 
+    gap: 1rem; 
+    font-size: 1.125rem;
+    line-height: 1.75rem;     
+}
+
+.icons i{
+    padding: 0.5rem; 
+    transition: 0.5s;
+    border: 1px solid var(--title-color);
+    border-radius: 50%;
+}
+
+.icons i:hover{
+    background-color: var(--icon-background-color);
+    color: blue; 
+    transition: 0.5s; 
+}
+
+.logo {
+    font-size: 2.25rem;
+    line-height: 2.5rem; 
+    font-weight: 700; 
+}

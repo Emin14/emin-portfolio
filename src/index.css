@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hue-color: 230;
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --icon-background-color: hsl(296, 7%, 54%);
+    --theme-button-color: hsl(60, 4%, 65%);
+    --menu-shadow: 0 -1px 4px rgba(223, 17, 17, 0.15);
+}
+
+body {
+    /* font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+  
+  body.dark-theme {
+    --title-color: hsl(var(
+    --hue-color), 8%, 95%);
+    --text-color: hsl(var(
+    --hue-color), 8%, 75%);
+    --body-color: hsl(var(
+    --hue-color), 29%, 12%);
+    --icon-background-color: hsl(var(
+    --hue-color), 8%, 95%);
+    --theme-button-color: hsl(var(
+        --hue-color), 8%, 95%);
+    --menu-shadow: 0 -1px 4px rgba(255, 255, 255, 0.15);
+  }
+  
+
+  p, h1, h2, h3, h4, h5, h6, a {
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+button {
+    background-color: inherit;
+  }

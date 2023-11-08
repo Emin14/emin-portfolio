@@ -1,0 +1,40 @@
+.projects {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; 
+}
+
+.title {
+    font-size: 2.25rem;
+    line-height: 2.5rem; 
+    font-weight: 700; 
+    text-align: center;
+    color: var(--title-color);
+}
+
+.description {
+    text-align: center; 
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: var(--text-color);  
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; 
+}
+
+.projectCards {
+    display: grid;
+    padding: 2.5rem; 
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    gap: 2rem; 
+    justify-content: center; 
+    justify-self: center; 
+    align-items: center;
+    width: 80%;
+    max-width: max-content;
+    margin: 0 auto; 
+    background-color: #090348;
+    background: linear-gradient(90deg,#b004b0,#38097a); 
+    background: linear-gradient(90deg,#16056c,rgb(98, 185, 232)); 
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    border: 2px solid #b0aaaa;
+}
