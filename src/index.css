@@ -16,6 +16,10 @@
     --icon-background-color: hsl(296, 7%, 54%);
     --theme-button-color: hsl(60, 4%, 65%);
     --menu-shadow: 0 -1px 4px rgba(223, 17, 17, 0.15);
+    --title-font-size: 36px;
+    --menu-font-size: 30px;
+    --text-font-size: 18px;
+    --small-font-size: 16px;
 }
 
 body {
@@ -27,6 +31,7 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    font-size: --title-font-size;
   }
   
   body.dark-theme {
@@ -61,3 +66,42 @@ body {
 button {
     background-color: inherit;
   }
+
+
+  @media screen and (min-width: 768px) {
+  }
+
+/* // Большие девайсы (большие десктопы, < 1200px) */
+@media (max-width: 1199.98px) {
+  body {
+    --title-font-size: 30px;
+    --menu-font-size: 24px;
+    --text-font-size: 16px;
+    --small-font-size: 14px;
+  }
+
+
+}
+
+/* // Средние девайсы («таблетки», < 992px)  */
+@media (max-width: 991.98px) {
+    .imageWrapper {
+    }
+    
+    .img {
+    }
+
+    .decore {
+    }
+}
+
+/* // Малые девайсы («ландшафтные», < 768px) */
+@media (max-width: 767.98px) {
+  
+}
+
+@media (max-width: 575.98px) {
+    .list .item:nth-child(3) {
+        display: none;
+    }
+}

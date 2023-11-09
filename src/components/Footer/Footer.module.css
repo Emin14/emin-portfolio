@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     
+    width: 100%;
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
@@ -30,14 +31,15 @@
     border-radius: 50%;
 }
 
-.icons i:hover{
-    background-color: var(--icon-background-color);
-    color: blue; 
-    transition: 0.5s; 
-}
-
 .logo {
-    font-size: 2.25rem;
-    line-height: 2.5rem; 
+    font-size: var(--title-font-size);
     font-weight: 700; 
 }
+
+@media screen and (min-width: 768px) {
+    .icons i:hover{
+        background-color: var(--icon-background-color);
+        color: blue; 
+        transition: 0.5s; 
+    }
+  }

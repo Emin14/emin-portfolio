@@ -1,5 +1,4 @@
 .projects {
-    padding-top: 2.5rem;
     padding-bottom: 2.5rem; 
 }
 
@@ -9,12 +8,12 @@
     font-weight: 700; 
     text-align: center;
     color: var(--title-color);
+    font-size: var(--title-font-size);
 }
 
 .description {
     text-align: center; 
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: var(--text-font-size);
     color: var(--text-color);  
     padding-top: 0.75rem;
     padding-bottom: 0.75rem; 
@@ -36,5 +35,12 @@
     background: linear-gradient(90deg,#16056c,rgb(98, 185, 232)); 
     border-radius: 50px;
     padding: 1rem 3rem;
+    padding: clamp(6px, 2vw, 2rem) clamp(6px, 2vw, 2rem);
     border: 2px solid #b0aaaa;
+}
+
+@media (max-width: 1199.98px) {
+    .projectCards {
+        width: 100%;
+    }
 }

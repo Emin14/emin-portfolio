@@ -7,6 +7,7 @@
     height: 100vh; 
     color: #ffffff; 
     font-weight: 700;
+    /* position: relative; */
 }
 
 .rightBlock {
@@ -20,11 +21,10 @@
 .title {
     padding: 0.5rem; 
     border-radius: 1rem; 
-    font-size: 2.25rem;
-    line-height: 2.5rem; 
     font-weight: 700; 
     border: 2px solid #b0aaaa;
     background-color: rgb(40, 50, 115); 
+    font-size: var(--title-font-size);
 }
 
 .text {
@@ -32,9 +32,9 @@
     border-radius: 1rem; 
     max-width: 36rem; 
     font-weight: 400;
-    font-size: 18px; 
     border: 2px solid #b0aaaa;
     background-color: rgb(40, 50, 115);
+    font-size: var(--text-font-size);
 }
 
 .location {
@@ -45,17 +45,17 @@
     border-radius: 1rem; 
     border: 2px solid #b0aaaa;
     background-color: rgb(40, 50, 115); 
+    
 }
 
 .locationText {
-    font-size: 18px; 
+    font-size: var(--text-font-size);
     font-weight: 400; 
 }
 
 .leftBlock {
     display: flex; 
     position: absolute; 
-    width: 420px;
     -webkit-animation: programmer 3s linear infinite alternate;
     animation: programmer 7s linear infinite alternate;
     width: 400px;
@@ -70,11 +70,57 @@
 @keyframes programmer {
   0% {
     left: 70%;
-    top: 50%;
+    top: 17%;
   }
 
   100% {
     left: 50%;
-    top: 20%;
+    top: 5%;
   }
+}
+
+/* // Большие девайсы (большие десктопы, < 1200px) */
+@media (max-width: 1199.98px) {
+    .leftBlock {
+        display: flex; 
+        position: absolute; 
+        width: 300px;
+    }
+
+    /* @keyframes programmer {
+        0% {
+          left: 70%;
+          top: 50%;
+        }
+      
+        100% {
+          left: 55%;
+          top: 20%;
+        }
+      } */
+
+      .text {
+        max-width: 32rem; 
+    }
+}
+
+/* // Средние девайсы («таблетки», < 992px)  */
+@media (max-width: 991.98px) {
+    .leftBlock {
+        display: flex; 
+        position: absolute; 
+        width: 240px;
+    }
+
+    .text {
+        max-width: 28rem; 
+    }
+}
+
+/* // Средние девайсы («таблетки», < 768px)  */
+@media (max-width: 767.98px) {
+    .leftBlock {
+        display: none;
+    }
+
 }

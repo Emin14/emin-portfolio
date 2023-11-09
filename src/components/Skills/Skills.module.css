@@ -2,20 +2,19 @@
     padding: 1rem; 
     text-align: center; 
     margin: 0 auto;
-    margin-bottom: 5rem;
+    margin-bottom: clamp(2rem, 9vw, 8rem);
 }
 
 .title {
-    font-size: 2.25rem;
     line-height: 2.5rem; 
     color: var(--title-color);
+    font-size: var(--title-font-size);
 }
 
 .description {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem; 
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: var(--text-font-size);
     color: var(--text-color);
     text-align: center;    
 }
@@ -26,14 +25,40 @@
     margin-bottom: 1.5rem; 
     flex-wrap: wrap; 
     column-gap: 2rem; 
-    row-gap: 0.5rem; 
+    column-gap: clamp(0.4rem, 2.4vw, 2rem);
+    row-gap: 1.4rem; 
+    row-gap: clamp(0.4rem, 2vw, 1rem);
     justify-content: space-between; 
     align-items: center; 
     border-radius: 1.5rem; 
-    width: 80%; 
+    /* width: 80%; */
+    width: clamp(40vw, 55rem, 100%);
     margin: 0 auto;
     background: linear-gradient(90deg,#16056c,rgb(98, 185, 232)); 
     border-radius: 50px;
-    padding: 1rem 3rem;
+    padding: clamp(0.6rem, 2vw, 1.6rem) clamp(0.8rem, 2.2vw, 2rem);
     border: 2px solid #b0aaaa;
+}
+
+/* // Большие девайсы (большие десктопы, < 1200px) */
+@media (max-width: 1199.98px) {
+    /* .icons {
+        width: 100%;
+    } */
+}
+
+/* // Средние девайсы («таблетки», < 992px)  */
+@media (max-width: 991.98px) {
+    .icons  {
+        /* column-gap: 26px;  */
+        /* row-gap: 10px; */
+        /* padding: 1rem 2rem; */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .icons  {
+        /* column-gap: 3.5vw; 
+        row-gap: 10px; */
+    }
 }

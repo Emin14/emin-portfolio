@@ -3,6 +3,7 @@
     border-radius: 30px;
     overflow: hidden;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 
 .card::before {
@@ -15,9 +16,7 @@
   transition: 0.4s ease-in-out;
 }
 
-.card:hover::before {
-  height: 100%;
-}
+
 
 .curtain {
   position: absolute;
@@ -28,10 +27,7 @@
   width: 100%;
 }
 
-.card:hover .curtain {
-  top: 0;
-  opacity: 1;
-}
+
 
 .curtain h4 {
   font-size: 30px;
@@ -64,8 +60,7 @@
 }
 
 .title {
-  font-size: 1.875rem;
-  line-height: 2.25rem; 
+  font-size: var(--menu-font-size);
   font-weight: 700;
   color:hsl(230, 8%, 95%);
 }
@@ -85,6 +80,47 @@
     transition-duration: 200ms; 
 }
 
-.icon:hover {
+@media screen and (min-width: 768px) {
+  .card:hover::before {
+    height: 100%;
+  }
+
+  .card:hover .curtain {
+    top: 0;
+    opacity: 1;
+  }
+
+  .icon:hover {
     color: #1D4ED8; 
+}
+
+}
+
+/* // Средние девайсы («таблетки», < 768px)  */
+@media (max-width: 767.98px) {
+  .curtain {
+    position: relative; 
+    left: 0; 
+    padding: 0.5rem; 
+    width: 100%; 
+    height: 100%; 
+    text-align: center; 
+    top: 0;
+    background-color: rgb(9, 9, 9);
+    opacity: 1;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .links {
+    margin-top: 4px;
+  }
 }
