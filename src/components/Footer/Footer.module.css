@@ -4,7 +4,7 @@
     box-shadow: var(--menu-shadow);
     padding-top: 1rem;
     padding-bottom: 1rem;
-   margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .wrapper {
@@ -17,6 +17,11 @@
     padding: 0 15px;
 }
 
+.logo {
+    font-size: var(--title-font-size);
+    font-weight: 700; 
+}
+
 .icons {
     display: flex; 
     gap: 1rem; 
@@ -24,22 +29,47 @@
     line-height: 1.75rem;     
 }
 
-.icons i{
+.icon {
+    position: relative;
+}
+
+.icon i{
     padding: 0.5rem; 
     transition: 0.5s;
     border: 1px solid var(--title-color);
     border-radius: 50%;
 }
 
-.logo {
-    font-size: var(--title-font-size);
-    font-weight: 700; 
+.description {
+    position: absolute;
+    color: 1px solid var(--title-color);
+    top: -65%;
+    left: 0;
+    right: 0;
+    font-size: 10px;
+    font-weight: 300;
+    opacity: 0;
 }
 
+
 @media screen and (min-width: 768px) {
-    .icons i:hover{
+    .icon i:hover{
         background-color: var(--icon-background-color);
         color: blue; 
         transition: 0.5s; 
+    }
+
+    .icon:hover .description{
+        opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .logo{
+        display: none;
+    }
+
+    .icons {
+        margin: 0 auto;
     }
   }

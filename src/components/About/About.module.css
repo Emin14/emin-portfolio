@@ -25,12 +25,14 @@
     border: 2px solid #b0aaaa;
     background-color: rgb(40, 50, 115); 
     font-size: var(--title-font-size);
+    font-size: clamp(22px, 3.9vw, 36px)
 }
 
 .text {
     padding: 0.5rem; 
     border-radius: 1rem; 
-    max-width: 36rem; 
+    max-width: 36rem;
+    max-width: clamp(10px, 52vw, 36rem);
     font-weight: 400;
     border: 2px solid #b0aaaa;
     background-color: rgb(40, 50, 115);
@@ -82,38 +84,15 @@
 /* // Большие девайсы (большие десктопы, < 1200px) */
 @media (max-width: 1199.98px) {
     .leftBlock {
-        display: flex; 
-        position: absolute; 
         width: 300px;
     }
 
-    /* @keyframes programmer {
-        0% {
-          left: 70%;
-          top: 50%;
-        }
-      
-        100% {
-          left: 55%;
-          top: 20%;
-        }
-      } */
-
-      .text {
-        max-width: 32rem; 
-    }
 }
 
 /* // Средние девайсы («таблетки», < 992px)  */
 @media (max-width: 991.98px) {
     .leftBlock {
-        display: flex; 
-        position: absolute; 
         width: 240px;
-    }
-
-    .text {
-        max-width: 28rem; 
     }
 }
 
@@ -123,4 +102,11 @@
         display: none;
     }
 
+    .title {
+        font-size: clamp(22px, 6vw, 30px)
+    }
+
+    .text {
+        max-width: clamp(310px, 90vw, 28rem)
+    }
 }

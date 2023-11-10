@@ -1,10 +1,14 @@
 .card {
-    position: relative;
-    border-radius: 30px;
-    overflow: hidden;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-  }
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.img {
+  width: 100%;
+}
 
 .card::before {
   content: "";
@@ -16,8 +20,6 @@
   transition: 0.4s ease-in-out;
 }
 
-
-
 .curtain {
   position: absolute;
   text-align: center;
@@ -27,24 +29,11 @@
   width: 100%;
 }
 
-
-
-.curtain h4 {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
-}
-
 .curtain span {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
-}
-
-.img {
-    width: 100%;
 }
 
 .curtain {
@@ -77,8 +66,10 @@
 
 .icon {
     color: #60A5FA; 
-    transition-duration: 200ms; 
+    transition-duration: 200ms;
+    font-size: 30px;
 }
+
 
 @media screen and (min-width: 768px) {
   .card:hover::before {
@@ -93,26 +84,25 @@
   .icon:hover {
     color: #1D4ED8; 
 }
-
 }
 
 /* // Средние девайсы («таблетки», < 768px)  */
 @media (max-width: 767.98px) {
   .curtain {
     position: relative; 
-    left: 0; 
+    left: auto; 
+    top: auto;
     padding: 0.5rem; 
     width: 100%; 
-    height: 100%; 
+    height: 105px; 
     text-align: center; 
-    top: 0;
     background-color: rgb(9, 9, 9);
     opacity: 1;
   }
 
   .title {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .description {
@@ -122,5 +112,19 @@
 
   .links {
     margin-top: 4px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .description {
+      display: none;
+  }
+
+  .curtain {
+    height: 70px; 
+  }
+
+  .title {
+    font-size: 14px;
   }
 }

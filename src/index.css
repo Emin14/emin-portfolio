@@ -23,8 +23,6 @@
 }
 
 body {
-    /* font-family: 'Inter', sans-serif;
-    font-family: 'Montserrat', sans-serif; */
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 
@@ -34,42 +32,38 @@ body {
     font-size: --title-font-size;
   }
   
-  body.dark-theme {
-    --title-color: hsl(var(
-    --hue-color), 8%, 95%);
-    --text-color: hsl(var(
-    --hue-color), 8%, 75%);
-    --body-color: hsl(var(
-    --hue-color), 29%, 12%);
-    --icon-background-color: hsl(var(
-    --hue-color), 8%, 95%);
-    --theme-button-color: hsl(var(
-        --hue-color), 8%, 95%);
-    --menu-shadow: 0 -1px 4px rgba(255, 255, 255, 0.15);
-  }
+body.dark-theme {
+  --title-color: hsl(var(
+  --hue-color), 8%, 95%);
+  --text-color: hsl(var(
+  --hue-color), 8%, 75%);
+  --body-color: hsl(var(
+  --hue-color), 29%, 12%);
+  --icon-background-color: hsl(var(
+  --hue-color), 8%, 95%);
+  --theme-button-color: hsl(var(
+  --hue-color), 8%, 95%);
+  --menu-shadow: 0 -1px 4px rgba(255, 255, 255, 0.15);
+}
   
 
-  p, h1, h2, h3, h4, h5, h6, a {
-    padding: 0;
-    margin: 0;
-  }
+p, h1, h2, h3, h4, h5, h6, a {
+  padding: 0;
+  margin: 0;
+}
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  li {
-    list-style-type: none;
-  }
+li {
+  list-style-type: none;
+}
 
 button {
     background-color: inherit;
-  }
-
-
-  @media screen and (min-width: 768px) {
-  }
+}
 
 /* // Большие девайсы (большие десктопы, < 1200px) */
 @media (max-width: 1199.98px) {
@@ -79,29 +73,4 @@ button {
     --text-font-size: 16px;
     --small-font-size: 14px;
   }
-
-
-}
-
-/* // Средние девайсы («таблетки», < 992px)  */
-@media (max-width: 991.98px) {
-    .imageWrapper {
-    }
-    
-    .img {
-    }
-
-    .decore {
-    }
-}
-
-/* // Малые девайсы («ландшафтные», < 768px) */
-@media (max-width: 767.98px) {
-  
-}
-
-@media (max-width: 575.98px) {
-    .list .item:nth-child(3) {
-        display: none;
-    }
 }

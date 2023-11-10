@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Icon.module.css'
 
-const Icon = ({src, alt, message=''}) => {
+function Icon ({src, alt, message=''}) {
   return (
     <div className={styles.icon} >
       <div className={styles.imgWrapper}>
