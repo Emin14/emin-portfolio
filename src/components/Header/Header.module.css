@@ -24,6 +24,7 @@
     font-size: var(--title-font-size);
     position: relative;
     text-decoration: underline  0.2rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav {
@@ -192,8 +193,7 @@
     transition: 0.3s;
  }
 
-
- @media screen and (min-width: 768px) {
+ @media (hover: hover) and (pointer: fine) {
     .icon:hover .description{
         opacity: 1;
     }
@@ -208,6 +208,10 @@
         background: rgba(132, 18, 157, 0.718);
      }
 }
+
+ /* @media screen and (min-width: 768px) {
+
+} */
 
  /* // Большие девайсы (большие десктопы, < 1200px) */
 @media (max-width: 1199.98px) {

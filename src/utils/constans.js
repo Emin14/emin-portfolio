@@ -54,7 +54,7 @@ export const projects = [
       title: "Hangman",
       description: "Word Guessing Game",
       img: img4,
-      webLink: "",
+      webLink: "https://glistening-hummingbird-3dbd8c.netlify.app",
       gitLink: "https://github.com/Emin14/Hangman"
     }
 ];

@@ -19,7 +19,8 @@
 
 .logo {
     font-size: var(--title-font-size);
-    font-weight: 700; 
+    font-weight: 700;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .icons {
@@ -51,8 +52,7 @@
     opacity: 0;
 }
 
-
-@media screen and (min-width: 768px) {
+@media (hover: hover) and (pointer: fine) {
     .icon i:hover{
         background-color: var(--icon-background-color);
         color: blue; 
@@ -62,14 +62,13 @@
     .icon:hover .description{
         opacity: 1;
     }
-  }
+}
 
-  @media screen and (max-width: 350px) {
-    .logo{
-        display: none;
-    }
-
-    .icons {
-        margin: 0 auto;
-    }
+@media screen and (max-width: 350px) {
+  .logo{
+      display: none;
   }
+  .icons {
+      margin: 0 auto;
+  }
+}

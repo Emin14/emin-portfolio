@@ -44,7 +44,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={show ? [styles.wrapper, styles.show].join(' ') :  styles.wrapper} >
-        <h1 className={styles.logo}>Emin</h1>
+      <AnchorLink href='#about'><h1 className={styles.logo}>Emin</h1></AnchorLink>
         <nav className={styles.nav}>
           <ul className={styles.list}>
             {menuLink.map(item => (
