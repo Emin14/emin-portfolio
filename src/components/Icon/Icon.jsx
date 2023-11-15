@@ -1,15 +1,18 @@
-import React from 'react'
-import styles from './Icon.module.css'
+import styles from './Icon.module.css';
 
-function Icon ({src, alt, message=''}) {
+function Icon({ src, alt }) {
   return (
-    <div className={styles.icon} >
+    <div className={styles.icon}>
       <div className={styles.imgWrapper}>
-        <img src={src} alt={alt} className={styles.img}/>
+        <img src={src} alt={alt} className={styles.img} />
       </div>
-      <p className={styles.title}> {alt} </p>
+      <p className={styles.title}>
+        {' '}
+        {alt}
+        {' '}
+      </p>
     </div>
-  )
+  );
 }
 
-export default Icon
+export default Icon;

@@ -1,8 +1,7 @@
-import React from "react";
-import {Slide} from "react-awesome-reveal";
-import Icon from "../Icon/Icon"
-import {skills} from '../../utils/constans.js'
-import styles from './Skills.module.css'
+import { Slide } from 'react-awesome-reveal';
+import Icon from '../Icon/Icon';
+import { skills } from '../../utils/constans';
+import styles from './Skills.module.css';
 
 function Skills() {
   return (
@@ -12,10 +11,10 @@ function Skills() {
           <h1 className={styles.title}>Мой стек</h1>
           <p className={styles.description}>Технологии которыми я владею</p>
           <ul className={styles.icons}>
-            {skills.map(item => (
-                <li key={item.id} >
-                  <Icon src={item.img} alt={item.name} message='' />
-                </li>
+            {skills.map((item) => (
+              <li key={item.id}>
+                <Icon src={item.img} alt={item.name} message="" />
+              </li>
             ))}
           </ul>
         </div>

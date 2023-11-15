@@ -25,6 +25,7 @@
     position: relative;
     text-decoration: underline  0.2rem;
     -webkit-tap-highlight-color: transparent;
+    font-size: inherit;
 }
 
 .nav {
@@ -66,7 +67,7 @@
     position: relative;
 }
 
-.icon i {
+.icon svg {
     padding: 0.5rem; 
     transition: 0.5s;
     border: 1px solid var(--title-color);
@@ -198,7 +199,7 @@
         opacity: 1;
     }
 
-    .icon i:hover{
+    .icon svg:hover{
         background-color: var(--icon-background-color);
         color: blue; 
         transition: 0.5s; 
@@ -348,7 +349,7 @@
         font-size: 40px;
     }
 
-    .icons i{
+    .icons svg{
         padding: 1rem;
     }
 
