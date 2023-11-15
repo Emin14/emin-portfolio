@@ -50,7 +50,7 @@ export const projects = [
     title: 'Jadoo-react',
     description: 'Travel website in two languages.',
     img: img3,
-    webLink: 'https://jadoo-react-six.vercel.app/',
+    webLink: 'https://jadoo-react-5qut.vercel.app/',
     gitLink: 'https://github.com/Emin14/jadoo-react',
   },
   {
