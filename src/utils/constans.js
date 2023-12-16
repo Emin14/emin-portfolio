@@ -31,19 +31,19 @@ export const socialIcons = [
 export const projects = [
   {
     id: 1,
+    title: 'Funduchok-store',
+    description: 'Online store created using ReactJS:',
+    img: img2,
+    webLink: 'https://funduchok-b879d.web.app/#/orehi',
+    gitLink: 'https://github.com/Emin14/funduchok-store',
+  },
+  {
+    id: 2,
     title: 'Armageddon_NextJS',
     description: 'An online service for monitoring and destroying dangerous asteroids based on NASA API data.',
     img: img1,
     webLink: 'https://armageddon-next-js-five.vercel.app/',
     gitLink: 'https://github.com/Emin14/armageddon__NextJS',
-  },
-  {
-    id: 2,
-    title: 'Funduchok-store',
-    description: 'Online store created using ReactJS:',
-    img: img2,
-    webLink: '',
-    gitLink: 'https://github.com/Emin14/funduchok-store',
   },
   {
     id: 3,
